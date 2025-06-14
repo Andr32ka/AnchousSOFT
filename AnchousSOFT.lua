@@ -35,3 +35,4 @@ Section:NewToggle("ToggleText", "ToggleInfo", function(state)
         game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enabled = false
     end
 end)
+end)
