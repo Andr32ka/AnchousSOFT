@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Roboj
 
 local Window = Library.CreateLib("AnchousSOFT", "RJTheme3")
 
-local Tab = Window:NewTab("Teleports")
+local Tab = Window:NewTab("Grow a garden")
 
 local Section = Tab:NewSection("NPSC")
 
@@ -17,6 +17,9 @@ end)
 Section:NewButton("Pet eggs", "ButtonInfo", function()
 workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.Raphael.HumanoidRootPart.CFrame
 end)
+
+
+local Section = Tab:NewSection("Hack")
 
 Section:NewSlider("SpeedHack", "SliderInfo", 500, 20, function(s) 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
