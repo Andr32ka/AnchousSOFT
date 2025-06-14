@@ -21,7 +21,7 @@ end)
 Section:NewSlider("SpeedHack", "SliderInfo", 500, 20, function(s) 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
-Section:NewSlider("Jumphack", "SliderInfo", 500, 20, function(j)
+Section:NewSlider("Jumphack", "SliderInfo", 500, 45, function(j)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 end)
 
