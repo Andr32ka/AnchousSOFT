@@ -28,6 +28,8 @@ Section:NewSlider("Jumphack", "SliderInfo", 500, 45, function(j)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 end)
 
+local Tab = Window:NewTab("Grow a garden")
+
 Section:NewToggle("ToggleText", "ToggleInfo", function(state)
     if state then
         game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enabled = true
