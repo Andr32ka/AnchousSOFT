@@ -43,11 +43,12 @@ end)
 local function press_key(key)
   robot.key_down(key)
   robot.key_up(key)
-end
-Section:NewButton("Cosmetics", "ButtonInfo", function()
+end)
+Section:NewButton("sell all", "ButtonInfo", function()
 workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.Steven.HumanoidRootPart.CFrame
 robot.sleep(100)
 press_key("e")
+robot.sleep(300)
 press_key("1")
 
 end)
