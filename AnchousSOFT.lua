@@ -54,4 +54,9 @@ end)
     
 local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
+    local player = game.Players.LocalPlayer -- Получаем локального игрока
+local character = player.Character or player.CharacterAdded:Wait() -- Получаем персонажа игрока
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart") -- Получаем RootPart
+
     print(humanoidRootPart)
+
