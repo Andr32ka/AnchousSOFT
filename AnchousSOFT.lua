@@ -1,5 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
+local robot = require("robot"
+
 local Window = Library.CreateLib("AnchousSOFT", "RJTheme3")
 
 local Tab = Window:NewTab("Grow a garden")
@@ -38,3 +40,18 @@ Section:NewToggle("ToggleText", "ToggleInfo", function(state)
     end
 end)
 
+local function press_key(key)
+  robot.key_down(key)
+  robot.key_up(key)
+end
+Section:NewButton("Cosmetics", "ButtonInfo", function()
+workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.Steven.HumanoidRootPart.CFrame
+robot.sleep(100)
+press_key("e")
+press_key("1")
+
+end)
+    
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+    print(humanoidRootPart)
