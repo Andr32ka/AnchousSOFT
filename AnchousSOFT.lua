@@ -18,10 +18,10 @@ Section:NewButton("Pet eggs", "ButtonInfo", function()
 workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.Raphael.HumanoidRootPart.CFrame
 end)
 
-Section:NewSlider("SpeedHack", "SliderInfo", 500, 0, function(s) 
+Section:NewSlider("SpeedHack", "SliderInfo", 500, 20, function(s) 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
-Section:NewSlider("Jumphack", "SliderInfo", 500, 0, function(j)
+Section:NewSlider("Jumphack", "SliderInfo", 500, 20, function(j)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 end)
 
