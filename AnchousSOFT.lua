@@ -11,7 +11,7 @@ workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.Eloise.HumanoidRoo
 end)
 
 Section:NewButton("Cosmetics", "ButtonInfo", function()
-workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.CosmeticStand.Chippy.HumanoidRootPart.CFrame
+workspace.Andr32kaz3.HumanoidRootPart.CFrame = workspace.NPCS.CosmeticStand.Isaac.HumanoidRootPart.CFrame
 end)
 
 Section:NewButton("Pet eggs", "ButtonInfo", function()
