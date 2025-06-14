@@ -33,35 +33,10 @@ Section:NewButton("ButtonText", "ButtonInfo", function()
 local player = game.Players.LocalPlayer
 local button = script.Parent
  
-local on_text = "Включить" -- Текст кнопки для включения ГУИ
-local off_text = "Выключить" -- Текст кнопки для выключения ГУИ
- 
-button.Text = off_text
-button.MouseButton1Click:Connect(function()
-	if on == false then
-		on = true
-		for _, gui in pairs(player:GetDescendants()) do
-			if gui:IsA("ScreenGui") then
-				if gui == script.Parent.Parent then
- 
-				else
-					button.Text = on_text
-					gui.Enabled = false
-				end
-			end
-		end
-	else
-		on = false
-		for _, gui in pairs(player:GetDescendants()) do
-			if gui:IsA("ScreenGui") then
-				if gui == script.Parent.Parent then
- 
-				else
-					button.Text = off_text
-					gui.Enabled = true
-				end
-			end
-		end
-	end
-end)
+Section:NewToggle("Seed UI", "ToggleInfo", function(state)
+    if state then
+        game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enable = true
+    else
+        game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enable = false
+    end
 end)
