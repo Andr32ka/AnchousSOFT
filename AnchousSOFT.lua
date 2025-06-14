@@ -28,15 +28,10 @@ Section:NewSlider("Jumphack", "SliderInfo", 500, 45, function(j)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
-   local on = false
-local player = game.Players.LocalPlayer
-local button = script.Parent
- 
-Section:NewToggle("Seed UI", "ToggleInfo", function(state)
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
     if state then
-        game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enable = true
+        game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enabled = true
     else
-        game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enable = false
+        game:GetService("Players").LocalPlayer.PlayerGui.Seed_Shop.Enabled = false
     end
 end)
